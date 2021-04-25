@@ -14,9 +14,53 @@ code {
 
 
 /* CSS START */
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .profile-image {
   border-radius: 50%;
   height: 175px;
   width: 175px;
+}
+
+header {
+  display: flex;
+  height: 80px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  background-color: rgb(186, 130, 238);
+}
+
+.nav-menu {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 45px;
+  width: 70vw;
+  justify-content: end;
+}
+
+.card {
+  width: 25rem;
+}
+
+.card-img {
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
+}
+
+.button-container {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 30px;
+  justify-content: end;
+}
+
+.navActive {
+  color:coral;
 }
