@@ -1,32 +1,27 @@
 import React from 'react'
-import { capitalizeFirstLetter } from '../../utils/helpers'
-import image from '../../assets/projects/codersbay.jpg'
 
-function Projects() {
-    const currentProject = {
-        name: "the coder's bay"
-    }
+const Projects = ({ currentProject }) => {
 
-    return (
-        <section>
-            <h1>Projects</h1>
-            <div className="card">
+const { name, description, git, app, projectTitle } = currentProject;
+
+return (
+        <div className="card" key={name}>
                 <img 
-                src={image}
-                alt="project"
+                src={require(`../../assets/images/${projectTitle}.jpg`).default}
+                alt={name}
                 className="card-img"
-                />
-                <div className="card-body d-flex flex-column align-items-center">
-                    <h4 className="card-title">{capitalizeFirstLetter(currentProject.name)}</h4>
-                    <div className="button-container">
-                    <a href="#" className="btn btn-primary">GitHub</a>
-                    <a href="#" className="btn btn-primary">Demo</a>
-                    </div>
-                    
-                </div>
+            />
+            <div className="card-body d-flex flex-column align-items-center">
+                <h4 className="card-title">Title</h4>
+                <p>{description}</p>
+                <div className="button-container">
+                    <a href={git} className="btn btn-primary">GitHub</a>
+                    <a href={app} className="btn btn-primary">Demo</a>
+                </div>   
             </div>
-        </section>
-    );
+        </div>
+    )
 }
 
 export default Projects;
+

@@ -5,7 +5,7 @@ function About() {
     return (
         <section>
             <h1 id="about">About me</h1>
-            <img src={profileImage} className="profile-image" />
+            <img src={profileImage} className="profile-image" alt="johann taylor"/>
             <p>I am a pianist and piano teacher who has recently transitioned into the world of tech. 
                 As a performer and teacher I constantly push my capacity for learning and improving in order to be on top of my game. 
                 Pushing my capacity along with my passion and dedication have all contributed to the successes on my coding journey.

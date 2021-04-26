@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { capitalizeFirstLetter } from '../../utils/helpers'
 
 
@@ -6,12 +6,10 @@ function Nav(props) {
     const {
         pages = [],
         setCurrentPage,
-        currentPage
-    } = props;
+        currentPage,
 
-    useEffect(() => {
-        document.title = capitalizeFirstLetter(currentPage.name);
-      }, [currentPage]);
+    } = props;
+    
 
     return (
         <header>
@@ -24,7 +22,10 @@ function Nav(props) {
                         <li 
                         className={`mx-1 ${currentPage.name === page.name && 'navActive'}`}
                         key={page.name}>
-                            <span onClick={() => setCurrentPage(page.name)}>
+                            <span onClick={() => 
+                            {setCurrentPage(page.name);
+                            }}
+                            >
                                 {capitalizeFirstLetter(page.name)}
                             </span>
                         </li>

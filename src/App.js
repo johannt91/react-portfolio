@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import './App.css';
-import About from './components/About'
-import Nav from './components/Nav'
-import Projects from './components/Projects'
+import About from './components/About';
+import Nav from './components/Nav';
+import Portfolio from './components/Portfolio';
+import ContactForm from './components/Contact';
 
 function App() {
   const [pages] = useState([
@@ -13,6 +14,7 @@ function App() {
   ]);
 
   const [currentPage, setCurrentPage] = useState(pages[0]);
+  // const [contactSelected, setContactSelected] = useState(false);
 
   return (
     <div>
@@ -20,10 +22,12 @@ function App() {
       pages={pages}
       setCurrentPage={setCurrentPage}
       currentPage={currentPage}
-      ></Nav>
+      >
+      </Nav>
       <main>
-        <Projects></Projects>
+        <Portfolio></Portfolio>
         <About></About>
+        <ContactForm></ContactForm>
       </main>
     </div>
   );
