@@ -13,7 +13,8 @@ return (
                 className="card-img"
             />
             <div className="card-body d-flex flex-column align-items-center">
-                <h4 className="card-title">Title</h4>
+                <h4 className="card-title">{name}
+                </h4>
                 <p>{description}</p>
                 <div className="button-container">
                     <a href={git} className="btn btn-dark"><FaGithub/>GitHub</a>

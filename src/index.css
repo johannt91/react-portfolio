@@ -55,14 +55,22 @@ header {
 }
 
 .button-container {
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  grid-gap: 30px;
-  justify-content: end;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 5px;
 }
 
 .navActive {
   color:coral;
 }
 
-.btn {}
+.btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+FaGithub {
+  margin-top: 10px;
+}

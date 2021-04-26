@@ -35,9 +35,9 @@ function Portfolio() {
 
 
     return (
-        <section>
+        <section className="portfolio">
             <h1>Portfolio</h1>
-            <div>
+            <div className="card-deck">
                 {projects.map((projectList, index) => (
                     <Projects 
                     projectList={projectList}
