@@ -4,6 +4,7 @@ import About from './components/About';
 import Header from './components/Header';
 import Portfolio from './components/Portfolio';
 import ContactForm from './components/Contact';
+import Resume from './components/Resume';
 
 function App() {
   const [pages] = useState([
@@ -21,10 +22,11 @@ function App() {
         return <Portfolio />;
       case 'Contact':
         return <ContactForm />;
+      case 'Resume':
+        return <Resume />
       default:
         return <About />;
-      // case 'Resume':
-      //   return <Resume />
+    
     }
   }
 
