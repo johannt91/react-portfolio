@@ -35,26 +35,26 @@ import { validateEmail } from '../../utils/helpers'
 
     return (
         <section>
-            <h1 data-testid="h1tag">Contact me</h1>
+            <h1>Contact me</h1>
             <form id="contact-form" onSubmit={handleSubmit}>
-                <div>
+                <div className="form-group">
                     <label htmlFor="name">Name:</label>
-                    <input type="text" name="name" onBlur={handleChange} defaultValue={name} /> {/*onChange event listener listens for keystrokes  */}
+                    <input className="form-control" type="text" name="name" onBlur={handleChange} defaultValue={name} /> {/*onChange event listener listens for keystrokes  */}
                 </div>
-                <div>
+                <div className="form-group">
                     <label htmlFor="email">Email address:</label>
-                    <input type="email" name="email" onBlur={handleChange} defaultValue={email} />
+                    <input className="form-control" type="email" name="email" placeholder="name@example.com" onBlur={handleChange} defaultValue={email} />
                 </div>
-                <div>
+                <div className="form-group">
                     <label htmlFor="message">Message:</label>
-                    <textarea name="message" onBlur={handleChange} defaultValue={message} rows="5" />
+                    <textarea className="form-control" name="message" onBlur={handleChange} defaultValue={message} rows="5" />
                 </div>
                 {errorMessage && (
                     <div>
                         <p className="error-text">{errorMessage}</p>
                     </div>
                 )}
-                <button data-testid="button" type="submit">Submit</button>
+                <button className="btn btn-primary" type="submit">Submit</button>
             </form>
         </section>
     );

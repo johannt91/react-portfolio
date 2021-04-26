@@ -1,9 +1,12 @@
 import React from 'react'
+import { SiAdobeacrobatreader } from 'react-icons/si'
+import Pdf from '../../assets/pdf/johann-taylor-resume.pdf'
 
 function Resume() {
     return (
         <section>
             <h1>My Resume</h1>
+            <p>Download my resume <a href={Pdf} target="_blank" rel="noreferrer" download><SiAdobeacrobatreader size={25} style={{ fill: 'black' }}/></a></p>
             <div>
                 <h3>Front-end Proficiencies</h3>
                 <ul className="skills">

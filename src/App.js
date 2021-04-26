@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Portfolio from './components/Portfolio';
 import ContactForm from './components/Contact';
 import Resume from './components/Resume';
+import Footer from './components/Footer';
 
 function App() {
   const [pages] = useState([
@@ -41,6 +42,7 @@ function App() {
       <main>
         {renderPage(currentPage)}
       </main>
+      <Footer/>
     </div>
   );
 }

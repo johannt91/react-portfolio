@@ -6,36 +6,36 @@ function Portfolio() {
         {
             name: "The Coders Bay",
             description: "HTML, CSS, JavaScript, SQL",
-            app: "heroku link",
-            git: "github link",
+            app: "https://the-coders-bay-app.herokuapp.com/",
+            git: "https://github.com/johannt91/codersbay",
             projectTitle: "codersbay"
         },
         {
             name: "Refrain",
             description: "HTML, CSS, JavaScript",
-            app: "heroku link",
-            git: "github link",
+            app: "codinggroupproject1.github.io/refrain/",
+            git: "https://github.com/CodingGroupProject1/REFRAIN",
             projectTitle: "refrain"
         },
         {
             name: "Run Buddy",
             description: "HTML, CS",
-            app: "heroku link",
-            git: "github link",
+            app: "johannt91.github.io/run-buddy/",
+            git: "https://github.com/johannt91/run-buddy",
             projectTitle: "runbuddy"
         },
         {
             name: "Weather Dashboard",
             description: "HTML, CSS, JavaScript",
-            app: "heroku link",
-            git: "github link",
+            app: "johannt91.github.io/weather-dashboard/",
+            git: "https://github.com/johannt91/weather-dashboard",
             projectTitle: "weatherdashboard"
         },
         {
             name: "Budget Tracker",
             description: "HTML, CSS, JavaScript, MongoDB",
-            app: "heroku link",
-            git: "github link",
+            app: "https://budget-trakr.herokuapp.com/",
+            git: "https://github.com/johannt91/budget-tracker",
             projectTitle: "budgettracker"
         },
         {
@@ -50,7 +50,10 @@ function Portfolio() {
 
     return (
         <section className="portfolio">
-            <h1>Portfolio</h1>
+            <div>
+                <h1>Portfolio</h1>
+            </div>
+            
             <div className="card-deck">
                 {projects.map((projectList, index) => (
                     <Projects 

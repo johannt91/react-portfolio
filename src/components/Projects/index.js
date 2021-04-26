@@ -13,7 +13,8 @@ return (
                 className="card-img"
             />
             <div className="card-body d-flex flex-column align-items-center">
-                <h4 className="card-title">{name}
+                <h4 className="card-title">
+                    {name}
                 </h4>
                 <p>{description}</p>
                 <div className="button-container">
