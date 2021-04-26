@@ -13,21 +13,21 @@ function Portfolio() {
         {
             name: "Refrain",
             description: "HTML, CSS, JavaScript",
-            app: "codinggroupproject1.github.io/refrain/",
+            app: "https://codinggroupproject1.github.io/REFRAIN/",
             git: "https://github.com/CodingGroupProject1/REFRAIN",
             projectTitle: "refrain"
         },
         {
             name: "Run Buddy",
             description: "HTML, CS",
-            app: "johannt91.github.io/run-buddy/",
+            app: "https://johannt91.github.io/run-buddy/",
             git: "https://github.com/johannt91/run-buddy",
             projectTitle: "runbuddy"
         },
         {
             name: "Weather Dashboard",
             description: "HTML, CSS, JavaScript",
-            app: "johannt91.github.io/weather-dashboard/",
+            app: "https://johannt91.github.io/weather-dashboard/",
             git: "https://github.com/johannt91/weather-dashboard",
             projectTitle: "weatherdashboard"
         },
