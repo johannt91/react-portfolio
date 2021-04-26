@@ -1,18 +1,9 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { capitalizeFirstLetter } from '../../utils/helpers'
 
 
 function Nav(props) {
-    const {
-        pages = [],
-        setCurrentPage,
-        currentPage,
-
-    } = props;
-    
-    useEffect(() => {
-        document.title = capitalizeFirstLetter(currentPage.name);
-      }, [currentPage]);
+    const pages = ['About', 'Portfolio', 'Contact']
 
     return (
         <header>
@@ -22,15 +13,13 @@ function Nav(props) {
             <nav>
                 <ul className="nav-menu">
                     {pages.map((page) =>(
-                        <li 
-                        className={`mx-1 ${currentPage.name === page.name && 'navActive'}`}
-                        key={page.name}>
-                            <span onClick={() => 
-                            {setCurrentPage(page.name);
-                            }}
+                        <li className="mx-1" key={page.name}>
+                            <a 
+                            href={'#' + page.toLocaleLowerCase()} 
+                            onClick={() => props.setCurrentPage(page)}
                             >
-                                {capitalizeFirstLetter(page.name)}
-                            </span>
+                            {capitalizeFirstLetter(page)}
+                            </a>
                         </li>
                     ))}
                 </ul>

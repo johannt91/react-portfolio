@@ -13,8 +13,20 @@ function App() {
     { name: "resume" }
   ]);
 
-  const [currentPage, setCurrentPage] = useState(pages[0]);
-  const [contactSelected, setContactSelected] = useState(false);
+  const [currentPage, setCurrentPage] = useState('About');
+
+  const renderPage = () => {
+    switch (currentPage) {
+      case 'Portfolio':
+        return <Portfolio />;
+      case 'Contact':
+        return <ContactForm />;
+      default:
+        return <About />;
+      // case 'Resume':
+      //   return <Resume />
+    }
+  }
 
   return (
     <div>
@@ -25,9 +37,7 @@ function App() {
       >
       </Nav>
       <main>
-        <Portfolio></Portfolio>
-        <About></About>
-        <ContactForm></ContactForm>
+        {renderPage(currentPage)}
       </main>
     </div>
   );
