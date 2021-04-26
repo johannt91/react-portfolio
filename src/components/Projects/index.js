@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Projects = ({ currentProject }) => {
+const Projects = ({ projectList }) => {
 
-const { name, description, git, app, projectTitle } = currentProject;
+const { name, description, git, app, projectTitle } = projectList;
 
 return (
         <div className="card" key={name}>

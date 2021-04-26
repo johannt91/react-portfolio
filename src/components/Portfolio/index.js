@@ -38,9 +38,9 @@ function Portfolio() {
         <section>
             <h1>Portfolio</h1>
             <div>
-                {projects.map((project, index) => (
+                {projects.map((projectList, index) => (
                     <Projects 
-                    project={project}
+                    projectList={projectList}
                     key={index}
                     />
                 ))}
