@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './App.css';
 import About from './components/About';
-import Nav from './components/Nav';
+import Header from './components/Header';
 import Portfolio from './components/Portfolio';
 import ContactForm from './components/Contact';
 
@@ -30,12 +30,12 @@ function App() {
 
   return (
     <div>
-      <Nav
+      <Header
       pages={pages}
       setCurrentPage={setCurrentPage}
       currentPage={currentPage}
       >
-      </Nav>
+      </Header>
       <main>
         {renderPage(currentPage)}
       </main>

@@ -30,6 +30,20 @@ function Portfolio() {
             app: "heroku link",
             git: "github link",
             projectTitle: "weatherdashboard"
+        },
+        {
+            name: "Budget Tracker",
+            description: "HTML, CSS, JavaScript, MongoDB",
+            app: "heroku link",
+            git: "github link",
+            projectTitle: "budgettracker"
+        },
+        {
+            name: "Team Profile Generator",
+            description: "HTML, CSS, JavaScript",
+            app: "heroku link",
+            git: "github link",
+            projectTitle: "teamprofile"
         }
     ])
 

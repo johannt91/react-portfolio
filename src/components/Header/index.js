@@ -1,10 +1,19 @@
 import React from 'react'
+import Navigation from '../Nav'
 
-function Header() {
+function Header(props) {
+    const { currentPage, setCurrentPage } = props;
     return (
-        <div>
-            
-        </div>
+        <header>
+                <h2>
+                    Johann Taylor
+                </h2>
+                <Navigation
+                    setCurrentPage={setCurrentPage}
+                    currentPage={currentPage}
+                >
+                </Navigation>
+        </header>
     )
 }
 
