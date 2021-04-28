@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaGithub } from 'react-icons/fa'
+import { FaGithub, FaLaptopCode } from 'react-icons/fa'
 
 const Projects = ({ projectList }) => {
 
@@ -19,7 +19,7 @@ return (
                 <p>{description}</p>
                 <div className="button-container">
                     <a href={git} className="btn btn-dark"><FaGithub/>GitHub</a>
-                    <a href={app} className="btn btn-primary">Demo</a>
+                    <a href={app} className="btn btn-primary"><FaLaptopCode/>Demo</a>
                 </div>   
             </div>
         </div>

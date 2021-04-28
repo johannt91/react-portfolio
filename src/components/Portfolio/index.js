@@ -41,27 +41,23 @@ function Portfolio() {
         {
             name: "Team Profile Generator",
             description: "HTML, CSS, JavaScript",
-            app: "heroku link",
-            git: "github link",
-            projectTitle: "teamprofile"
+            app: "https://https://johannt91.github.io/code-quiz/",
+            git: "https://github.com/johannt91/code-quiz",
+            projectTitle: "codequiz"
         }
     ])
 
 
     return (
         <section className="portfolio">
-            <div>
-                <h1>Portfolio</h1>
-            </div>
-            
-            <div className="card-deck">
+            <h1>Portfolio</h1>
+            <div className="projects">
                 {projects.map((projectList, index) => (
                     <Projects 
                     projectList={projectList}
                     key={index}
                     />
                 ))}
-
             </div>
         </section>
     );

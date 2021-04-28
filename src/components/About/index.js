@@ -24,6 +24,7 @@ function About() {
                 In this rapidly evolving technological landscape, my thirst for knowledge and curiosity fuel my desire to keep up with the latest technologies.
                 </p>
             </div>
+  
 
         </section>
     );

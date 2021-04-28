@@ -1,6 +1,7 @@
 import React from 'react'
 import Navigation from '../Nav'
 
+
 function Header(props) {
     const { currentPage, setCurrentPage } = props;
     return (

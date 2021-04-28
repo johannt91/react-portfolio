@@ -13,6 +13,9 @@ code {
     monospace;
 }
 
+#root {
+  min-height: 100vh;
+}
 
 /* CSS START */
 * {
@@ -24,29 +27,38 @@ code {
   border-radius: 50%;
   height: 175px;
   width: 175px;
+  margin-bottom: 30px;
 }
 
 header {
   display: flex;
   height: 100px;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   font-size: 1.2rem;
   background-color: rgb(77, 76, 78);
+
+}
+
+h1 {
+  margin: 30px 0;
 }
 
 h2 {
   color: rgb(248, 248, 248);
+  font-size: 3vw;
+  padding-left: 40px;
 }
+
 
 .nav-menu {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(5, auto);
   grid-gap: 45px;
-  width: 70vw;
   justify-content: end;
+  margin: 0;
 }
 
 section {
@@ -54,15 +66,8 @@ section {
   margin: 30px;
 }
 
-
-
-.portfolio {
-  display: grid;
-  grid-template-columns: repeat(2fr,auto);
-}
-
 .title-style {
-  border-bottom:coral solid;
+  color: rgb(192, 76, 33)
 }
 
 .greeting {
@@ -74,7 +79,8 @@ section {
   width: auto;
   overflow: hidden;
   font-size: 1.5rem;
-  border-right: .2em solid orange;
+  color: rgb(192, 76, 33);
+  border-right: .2em solid rgb(238, 155, 2);
   white-space: nowrap;
   margin: 0 auto;
   display: inline-block;
@@ -101,38 +107,65 @@ section {
   }
 
   50% {
-    border-color: orange;
+    border-color: rgb(238, 155, 2);
   }
 }
 
 .profile-img-container {
   display: grid;
-  grid-template-columns: repeat(3, auto);
-  grid-gap: 8rem;
+  grid-template-columns: repeat(4, auto);
   align-items: center;
-  justify-content: center;
+  justify-items: end;
   margin: 50px 0;
 }
 
-.card {
-  width: 25rem;
+.description {
+  padding-left: 50px;
 }
 
-.card-deck {
-  margin-top: 8px;
+.projects {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 35vw;
+  margin-bottom: 50px;
+  background-color: rgb(77, 76, 78);
+  color: white;
+  -webkit-box-shadow: 6px 7px 17px -3px rgba(68,68,68,0.81); 
+  box-shadow: 6px 7px 17px -3px rgba(68,68,68,0.81);
+}
+
+
+.card-body h4 {
+  font-size: 3.2vw;
+}
+
+.card-body p {
+  font-size: 1.5vw;
 }
 
 .card-img {
   width: 100%;
-  height: 15vw;
-  object-fit: cover;
+  height: auto;
+  object-fit: fill;
 }
+
 
 .button-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding: 5px;
+}
+
+.button-container a{
+  font-size: 1.5vw;
+  display: flex;
+  flex-direction: column;
 }
 
 .navActive {
@@ -158,13 +191,210 @@ FaGithub, FaLinkedin {
   margin-top: 10px;
 }
 
+
 footer {
-  position:absolute;
-  left:0;
-  bottom: 2rem;
-  right:0;
+  position: sticky;
+  top: 100%;
+  padding: 20px 0;
   display: grid;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(2, auto);
   grid-gap: 45px;
   justify-content: center;
+}
+
+footer a:hover {
+filter: invert(.5)
+}
+
+@media screen and (max-width: 980px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    height: 120px;
+  }
+  h2 {
+    font-size: 4.5vw;
+    margin-top: 10px;
+  }
+
+  nav {
+    font-size: 2.3vw;
+  }
+
+  .nav-menu {
+    width: 100%;
+    justify-content: center;
+    grid-gap: 30px;
+  }
+
+  .profile-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    align-items: center;
+    justify-items: center;
+    margin: 50px 0;
+  }
+
+  .greeting {
+    font-size: 5vw;
+  }
+
+  .card {
+    width: 40vw;
+  }
+
+  .projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 25px;
+    justify-items: center;
+  }
+
+}
+
+
+@media screen and (max-width: 768px) {
+  header {
+    height: 130px;
+  }
+  h2 {
+    font-size: 5.2vw;
+    margin-top: 10px;
+  }
+
+  nav {
+    font-size: 3vw;
+  }
+
+  .nav-menu {
+    width: 100%;
+    justify-content: center;
+    grid-gap: 30px;
+  }
+  
+  .profile-img-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px 0;
+  }
+  .about {
+    padding: 0 2em;
+    margin: 30px;
+  }
+
+  .portfolio {
+    width: 40vw;
+    padding: 0;
+    margin: 35px auto;
+  }
+
+  .card {
+    width: 35vw;
+  }
+
+  .projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 25px;
+    justify-items: center;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  header {
+    height: 130px;
+  }
+  h2 {
+    font-size: 8vw;
+    margin-top: 10px;
+  }
+
+  nav {
+    font-size: 4vw;
+  }
+
+  .nav-menu {
+    width: 100%;
+    justify-content: center;
+    grid-gap: 20px;
+  }
+
+  .greeting {
+    font-size: 6vw;
+  }
+
+  .occupation {
+    font-size: 3.7vw;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  header {
+    display: flex;
+    flex-direction: row;
+  }
+  h2 {
+    padding-right: 5px;
+    margin-left: 30px;
+  }
+
+  nav {
+    font-size: 4vw;
+  }
+
+  .nav-menu {
+    width: 100%;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+
+  .greeting {
+    font-size: 6vw;
+  }
+
+  .occupation {
+    font-size: 3.7vw;
+  }
+
+  .portfolio {
+    width: 70vw;
+  }
+
+  .projects {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .card {
+    width: 70vw;
+  }
+
+  .button-container a{
+    font-size: 2vw;
+    display: flex;
+    flex-direction: column;
+  }
+  .btn {
+    width: 10vw;
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+  h2 {
+    margin-left: 0;
+    padding-left: 20px;
+  }
+
+  .portfolio {
+    width: 75vw;
+    padding: 0;
+  }
+
 }
