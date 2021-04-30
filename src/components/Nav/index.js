@@ -8,8 +8,8 @@ function Nav(props) {
     return (
         <nav>
             <ul className="nav-menu">
-                {pages.map((page) =>(
-                    <li className="mx-1" key={page.name}>
+                {pages.map((page, index) =>(
+                    <li className="mx-1" key={index}>
                         <a 
                         href={'#' + page.toLocaleLowerCase()} 
                         onClick={() => props.setCurrentPage(page)}
