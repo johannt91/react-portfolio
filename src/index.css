@@ -334,6 +334,10 @@ filter: invert(.5)
     font-size: 4vw;
   }
 
+  .profile-img-container {
+    padding-right: 65px;
+  }
+
   .nav-menu {
     width: 100%;
     justify-content: center;
@@ -358,6 +362,10 @@ filter: invert(.5)
   h2 {
     padding-right: 5px;
     margin-left: 30px;
+  }
+
+  .profile-img-container {
+    padding-right: 50px;
   }
 
   nav {
@@ -399,7 +407,7 @@ filter: invert(.5)
     flex-direction: column;
   }
   .btn {
-    width: 10vw;
+    width: fit-content;
   }
 
 }
