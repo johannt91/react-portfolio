@@ -4,6 +4,13 @@ import Projects from '../Projects'
 function Portfolio() {
     const [projects] = useState([
         {
+            name: "Dog Dash",
+            description: "MERN",
+            app: "https://dog-dash.herokuapp.com/",
+            git: "https://github.com/pro3gro3/walk-my-dog",
+            projectTitle: "dogdash"
+        },
+        {
             name: "The Coders Bay",
             description: "HTML, CSS, JavaScript, SQL",
             app: "https://the-coders-bay-app.herokuapp.com/",
