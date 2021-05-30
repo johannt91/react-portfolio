@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.7ef3f43a.chunk.css",
-    "main.js": "/react-portfolio/static/js/main.9c551601.chunk.js",
-    "main.js.map": "/react-portfolio/static/js/main.9c551601.chunk.js.map",
+    "main.js": "/react-portfolio/static/js/main.f242dcc2.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.f242dcc2.chunk.js.map",
     "runtime-main.js": "/react-portfolio/static/js/runtime-main.e530417f.js",
     "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.e530417f.js.map",
     "static/css/2.ef9168ec.chunk.css": "/react-portfolio/static/css/2.ef9168ec.chunk.css",
@@ -15,6 +15,7 @@
     "static/media/budgettracker.jpg": "/react-portfolio/static/media/budgettracker.baf4240b.jpg",
     "static/media/codequiz.jpg": "/react-portfolio/static/media/codequiz.f480ec9b.jpg",
     "static/media/codersbay.jpg": "/react-portfolio/static/media/codersbay.bd68b70d.jpg",
+    "static/media/dogdash.jpg": "/react-portfolio/static/media/dogdash.874477f9.jpg",
     "static/media/image.f980a70e.jpeg": "/react-portfolio/static/media/image.f980a70e.jpeg",
     "static/media/johann-taylor-resume.e1383e9c.pdf": "/react-portfolio/static/media/johann-taylor-resume.e1383e9c.pdf",
     "static/media/refrain.jpg": "/react-portfolio/static/media/refrain.1140da9b.jpg",
@@ -27,6 +28,6 @@
     "static/css/2.ef9168ec.chunk.css",
     "static/js/2.6df8f312.chunk.js",
     "static/css/main.7ef3f43a.chunk.css",
-    "static/js/main.9c551601.chunk.js"
+    "static/js/main.f242dcc2.chunk.js"
   ]
 }
