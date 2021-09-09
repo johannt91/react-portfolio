@@ -1,11 +1,25 @@
 import React, { useState } from 'react'
 import { validateEmail } from '../../utils/helpers'
+import emailjs from 'emailjs-com';
 
  function ContactForm() {
     const [formState, setFormState] = useState({ name: '', email: '', message: '' }); //hook clears input fields on component loading
     const { name, email, message } = formState;
     const [errorMessage, setErrorMessage] = useState('');
 
+
+    function sendEmail(e) {
+        e.preventDefault();
+    
+        emailjs.sendForm('service_nz98vf2', 'template_5ndv0in', e.target, 'user_UclJrm4doPiXL8ccaAeI4')
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
+          e.target.reset(formState);
+          console.log(formState);
+      }
 
     function handleChange(e) { // synchronizes internal state of component's formState with user input from the DOM
         if(e.target.name === 'email') {
@@ -28,15 +42,10 @@ import { validateEmail } from '../../utils/helpers'
         console.log('errorMessage', errorMessage);
     }
 
-    function handleSubmit(e) {
-        e.preventDefault();
-        console.log(formState);
-    }
-
     return (
         <section>
             <h1>Contact me</h1>
-            <form id="contact-form" onSubmit={handleSubmit}>
+            <form id="contact-form" onSubmit={sendEmail}>
                 <div className="form-group">
                     <label htmlFor="name">Name:</label>
                     <input className="form-control" type="text" name="name" onBlur={handleChange} defaultValue={name} /> {/*onChange event listener listens for keystrokes  */}
