@@ -46,7 +46,7 @@ function Portfolio() {
             projectTitle: "budgettracker"
         },
         {
-            name: "Team Profile Generator",
+            name: "Code Quiz",
             description: "HTML, CSS, JavaScript",
             app: "https://https://johannt91.github.io/code-quiz/",
             git: "https://github.com/johannt91/code-quiz",
