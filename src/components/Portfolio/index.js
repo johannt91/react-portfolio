@@ -18,13 +18,6 @@ function Portfolio() {
             projectTitle: "codersbay"
         },
         {
-            name: "Refrain",
-            description: "HTML, CSS, JavaScript",
-            app: "https://codinggroupproject1.github.io/REFRAIN/",
-            git: "https://github.com/CodingGroupProject1/REFRAIN",
-            projectTitle: "refrain"
-        },
-        {
             name: "Run Buddy",
             description: "HTML, CS",
             app: "https://johannt91.github.io/run-buddy/",
@@ -46,7 +39,7 @@ function Portfolio() {
             projectTitle: "budgettracker"
         },
         {
-            name: "Team Profile Generator",
+            name: "Code Quiz",
             description: "HTML, CSS, JavaScript",
             app: "https://https://johannt91.github.io/code-quiz/",
             git: "https://github.com/johannt91/code-quiz",
