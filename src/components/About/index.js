@@ -23,6 +23,9 @@ function About() {
                 It has enabled me to foster my critical thinking skills, attention to detail, as well as breaking down of complex ideas into simpler components. 
                 In this rapidly evolving technological landscape, my thirst for knowledge and curiosity fuel my desire to keep up with the latest technologies.
                 </p>
+                <p>
+
+                </p>
             </div>
   
 

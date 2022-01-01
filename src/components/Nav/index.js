@@ -3,7 +3,7 @@ import { capitalizeFirstLetter } from '../../utils/helpers'
 
 
 function Nav(props) {
-    const pages = ['About', 'Portfolio', 'Contact', 'Resume']
+    const pages = ['About', 'Portfolio', 'Resume']
 
     return (
         <nav>
