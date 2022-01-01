@@ -248,11 +248,13 @@ footer {
 }
 
 .resume {
+  padding-top: 2rem;
   text-align: center;
 }
 
 .download {
   color: rgb(192, 76, 33);
+  font-size: 1.2rem;
 }
 
 .proficiencies {
@@ -260,7 +262,7 @@ footer {
   flex-direction: row;
   gap: 7rem;
   justify-content: center;
-  padding-top: 2rem;
+  padding-top: 3rem;
 }
 
 
@@ -508,6 +510,10 @@ footer {
 
   .resume-small ul li {
     line-height: 1.5;
+  }
+
+  .download {
+    font-size: .9rem;
   }
 
 }
