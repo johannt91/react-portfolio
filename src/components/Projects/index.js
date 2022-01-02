@@ -3,7 +3,7 @@ import { FaGithub, FaLaptopCode } from 'react-icons/fa'
 
 const Projects = ({ projectList }) => {
 
-const { name, description, git, app, projectTitle } = projectList;
+const { name, description, technologies, git, app, projectTitle } = projectList;
 
 return (
         <div className="card" key={name}>
@@ -17,6 +17,7 @@ return (
                     {name}
                 </h4>
                 <p>{description}</p>
+                <span>{technologies}</span>
                 <div className="button-container">
                     <a href={git} className="btn btn-dark"><FaGithub/>GitHub</a>
                     <a href={app} className="btn btn-primary"><FaLaptopCode/>Demo</a>

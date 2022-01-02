@@ -163,11 +163,20 @@ section {
 
 
 .card-body h4 {
-  font-size: 3.2vw;
+  font-size: 2.4vw;
+  font-weight: bold;
 }
 
 .card-body p {
-  font-size: 1.5vw;
+  font-size: 1.2vw;
+  text-align: center;
+  padding-bottom: 1.2rem;
+}
+
+.card-body span {
+  font-size: 1vw;
+  padding-bottom: 1rem;
+  font-style: italic;
 }
 
 .card-img {
@@ -348,7 +357,9 @@ footer {
   }
 
   .portfolio {
-    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 0;
     margin: 35px auto;
   }
@@ -357,12 +368,29 @@ footer {
     width: 35vw;
   }
 
+  .card h4 {
+    margin-bottom: .35rem;
+  }
+
+  .card-body p {
+    font-size: 1.2vw;
+    padding-bottom: 0;
+    margin-bottom: .7rem;
+    text-align: center;
+  }
+  
+  .card-body span {
+    font-style: italic;
+    padding-bottom: 0.2rem;
+  }
+
   .projects {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 25px;
     justify-items: center;
   }
+
 }
 
 @media screen and (max-width: 575px) {
@@ -400,12 +428,28 @@ footer {
     font-size: 3.7vw;
   }
 
+  .projects {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card {
+    width: 80vw;
+  }
+
   .card-body h4 {
-    font-size: 3.5vw;
+    font-size: 3vw;
   }
   
   .card-body p {
-    font-size: 2vw;
+    font-size: 1.8vw;
+    padding-bottom: 0;
+    margin-bottom: .7rem;
+  }
+  
+  .card-body span {
+    font-size: 1.5vw;
+    padding-bottom: 0.2rem;
   }
 
 }
@@ -440,18 +484,9 @@ footer {
     font-size: 3.7vw;
   }
 
-  .portfolio {
-    width: 70vw;
-  }
-
   .projects {
     display: flex;
     flex-direction: column;
-
-  }
-
-  .card {
-    width: 70vw;
   }
 
   .card-body h4 {
@@ -459,7 +494,11 @@ footer {
   }
   
   .card-body p {
-    font-size: 3vw;
+    font-size: 2.7vw;
+  }
+  
+  .card-body span {
+    font-size: 2.3vw;
   }
 
   .button-container a{
@@ -494,10 +533,6 @@ footer {
     padding-left: 20px;
   }
 
-  .portfolio {
-    width: 75vw;
-    padding: 0;
-  }
 
   .resume-small h1{
     font-size: 1.7rem;
@@ -514,6 +549,25 @@ footer {
 
   .download {
     font-size: .9rem;
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+  .card h4 {
+    font-size: 4.5vw;
+  }
+
+  .card-body p {
+    font-size: 2.8vw;
+  }
+  
+  .card-body span {
+    font-size: 3vw;
+  }
+
+  .btn {
+    width: 4rem;
   }
 
 }
