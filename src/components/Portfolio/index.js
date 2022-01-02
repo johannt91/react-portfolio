@@ -29,7 +29,7 @@ function Portfolio() {
         },
         {
             name: "Weather Dashboard",
-            description: "Weather app that provides current weather and a five day forecast for various city.",
+            description: "Weather app that provides current weather and a five day forecast for various cities.",
             technologies: "HTML, CSS, JavaScript, API",
             app: "https://johannt91.github.io/weather-dashboard/",
             git: "https://github.com/johannt91/weather-dashboard",
