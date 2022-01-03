@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.bcf886d8.chunk.css",
-    "main.js": "/static/js/main.d8b7d4d4.chunk.js",
-    "main.js.map": "/static/js/main.d8b7d4d4.chunk.js.map",
+    "main.js": "/static/js/main.2e3bd9e5.chunk.js",
+    "main.js.map": "/static/js/main.2e3bd9e5.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.a28230b2.js",
     "runtime-main.js.map": "/static/js/runtime-main.a28230b2.js.map",
     "static/css/2.ef9168ec.chunk.css": "/static/css/2.ef9168ec.chunk.css",
@@ -22,13 +22,13 @@
     "static/media/refrain.jpg": "/static/media/refrain.1140da9b.jpg",
     "static/media/runbuddy.jpg": "/static/media/runbuddy.b57f2b88.jpg",
     "static/media/teamprofile.jpg": "/static/media/teamprofile.b2d84529.jpg",
-    "static/media/weatherdashboard.jpg": "/static/media/weatherdashboard.77b40193.jpg"
+    "static/media/weatherdashboard.jpg": "/static/media/weatherdashboard.8ee7b7e6.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.a28230b2.js",
     "static/css/2.ef9168ec.chunk.css",
     "static/js/2.912fff99.chunk.js",
     "static/css/main.bcf886d8.chunk.css",
-    "static/js/main.d8b7d4d4.chunk.js"
+    "static/js/main.2e3bd9e5.chunk.js"
   ]
 }
