@@ -12,14 +12,6 @@ function Portfolio() {
             projectTitle: "dogdash"
         },
         {
-            name: "The Coders Bay",
-            description: "The Coders Bay is an online forum where like minded individuals can post about all things that are code.",
-            technologies: "HTML, CSS, JavaScript, SQL, Socket.IO, handlebars",
-            app: "https://the-coders-bay-app.herokuapp.com/",
-            git: "https://github.com/johannt91/codersbay",
-            projectTitle: "codersbay"
-        },
-        {
             name: "Piano Pedagogy Program",
             description: "Website designed for the Piano Pedagogy department in the Universty of Toronto's Faculty of Music.",
             technologies: "HTML, CSS, Bootstrap",
