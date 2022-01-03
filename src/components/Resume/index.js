@@ -10,7 +10,7 @@ function Resume() {
         <>
         <section className="resume">
             <h1>My Resume</h1>
-            <a href={Pdf} className="download" target="_blank" rel="noreferrer" download>Download my resume<SiAdobeacrobatreader size={25} style={{ fill: 'black' }}/></a>
+            <a href={Pdf} className="download" target="_blank" rel="noreferrer">Download my resume<SiAdobeacrobatreader size={25} style={{ fill: 'black' }}/></a>
             <div className="proficiencies">
             <div>
                 <h3>Front-end Proficiencies</h3>
