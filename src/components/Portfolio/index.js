@@ -15,8 +15,8 @@ function Portfolio() {
             name: "Piano Pedagogy Program",
             description: "Website designed for the Piano Pedagogy department in the Universty of Toronto's Faculty of Music.",
             technologies: "HTML, CSS, Bootstrap",
-            app: "https://github.com/johannt91/pedagogy-site",
-            git: "https://pianopedagogy.ca/",
+            app: "https://pianopedagogy.ca/",
+            git: "https://github.com/johannt91/pedagogy-site",
             projectTitle: "pianopedagogy"
         },
         {
@@ -28,12 +28,12 @@ function Portfolio() {
             projectTitle: "weatherdashboard"
         },
         {
-            name: "Budget Tracker",
-            description: "A PWA which allows users a fast and easy way to readily monitor their finances.",
-            technologies: "HTML, CSS, JavaScript, MongoDB",
-            app: "https://budget-trakr.herokuapp.com/",
-            git: "https://github.com/johannt91/budget-tracker",
-            projectTitle: "budgettracker"
+            name: "Tech Blog",
+            description: "A CMS style blog site with CRUD functionality.",
+            technologies: "JavaScript, Node, Handlebars, Express, Sequelize, MySQL",
+            app: "https://johanntechblog.herokuapp.com/",
+            git: "https://github.com/johannt91/tech-blog",
+            projectTitle: "techblog"
         },
         {
             name: "Code Quiz",
