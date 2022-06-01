@@ -3,7 +3,7 @@ import { SiAdobeacrobatreader } from 'react-icons/si'
 import { FaHtml5, FaCss3, FaReact, FaDatabase, FaBootstrap, FaNodeJs } from 'react-icons/fa'
 import { SiJavascript, SiJquery, SiGraphql } from 'react-icons/si'
 
-import Pdf from '../../assets/pdf/johann-taylor-resume.pdf'
+import Pdf from '../../assets/pdf/JohannTaylorResume.pdf'
 
 function Resume() {
     return (
