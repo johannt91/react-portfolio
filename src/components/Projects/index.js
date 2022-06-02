@@ -3,7 +3,9 @@ import { FaGithub, FaLaptopCode } from 'react-icons/fa'
 
 const Projects = ({ projectList }) => {
 
-const { name, description, technologies, git, app, projectTitle } = projectList;
+const { name, description, technologies, git, app, projectTitle, status } = projectList;
+
+const projectStatus = (status === "Completed") ? "project-status completed" : "project-status incomplete"
 
 return (
         <div className="card" key={name}>
@@ -18,6 +20,9 @@ return (
                 </h4>
                 <p>{description}</p>
                 <span>{technologies}</span>
+                <span className={`project-status ${projectStatus}`}>
+                Status: {status}
+                </span>
                 <div className="button-container">
                     <a href={git} className="btn btn-dark" target="_blank" rel="noreferrer"><FaGithub/>GitHub</a>
                     <a href={app} className="btn btn-primary" target="_blank" rel="noreferrer"><FaLaptopCode/>Demo</a>

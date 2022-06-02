@@ -4,7 +4,7 @@ import profileImage from '../../assets/profile/image.jpeg'
 function About() {
     return (
         <section className="about">
-            <h1 id="about">About <span className="title-style">me</span></h1>
+            <h1>About <span className="title-style">me</span></h1>
             <div className="profile-img-container">
                 <img src={profileImage} className="profile-image" alt="johann taylor"/>
                 <div className="description">

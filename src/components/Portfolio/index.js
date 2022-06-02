@@ -9,7 +9,8 @@ function Portfolio() {
             technologies: "MERN",
             app: "https://dog-dash.herokuapp.com/",
             git: "https://github.com/pro3gro3/walk-my-dog",
-            projectTitle: "dogdash"
+            projectTitle: "dogdash",
+            status: "Completed"
         },
         {
             name: "Piano Pedagogy Program",
@@ -17,7 +18,8 @@ function Portfolio() {
             technologies: "HTML, CSS, Bootstrap",
             app: "https://pianopedagogy.ca/",
             git: "https://github.com/johannt91/pedagogy-site",
-            projectTitle: "pianopedagogy"
+            projectTitle: "pianopedagogy",
+            status: "Completed"
         },
         {
             name: "Weather Dashboard",
@@ -25,15 +27,17 @@ function Portfolio() {
             technologies: "HTML, CSS, JavaScript, API",
             app: "https://johannt91.github.io/weather-dashboard/",
             git: "https://github.com/johannt91/weather-dashboard",
-            projectTitle: "weatherdashboard"
+            projectTitle: "weatherdashboard",
+            status: "Completed"
         },
         {
             name: "Tech Blog",
-            description: "A CMS style blog site with CRUD functionality.",
+            description: "A content management system style blog site with CRUD functionality.",
             technologies: "JavaScript, Node, Handlebars, Express, Sequelize, MySQL",
             app: "https://johanntechblog.herokuapp.com/",
             git: "https://github.com/johannt91/tech-blog",
-            projectTitle: "techblog"
+            projectTitle: "techblog",
+            status: "Completed"
         },
         {
             name: "Code Quiz",
@@ -41,7 +45,17 @@ function Portfolio() {
             technologies: "HTML, CSS, JavaScript",
             app: "https://https://johannt91.github.io/code-quiz/",
             git: "https://github.com/johannt91/code-quiz",
-            projectTitle: "codequiz"
+            projectTitle: "codequiz",
+            status: "Completed"
+        },
+        {
+            name: "Belles Artz",
+            description: "A website for the Belles Artz graphic design company featuring a list of their services",
+            technologies: "GatsbyJS",
+            app: "https://johannt91.github.io/bellesite/",
+            git: "https://github.com/johannt91/bellesite",
+            projectTitle: "bellesartz",
+            status: "In Progress"
         }
     ])
 
