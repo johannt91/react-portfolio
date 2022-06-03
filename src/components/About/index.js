@@ -9,7 +9,7 @@ function About() {
                 <img src={profileImage} className="profile-image" alt="johann taylor"/>
                 <div className="description">
                     <p className="greeting">Hi, I'm Johann!</p>
-                    <p className="occupation">Full Stack Web Developer</p>
+                    <p className="occupation">Front-end Web Developer</p>
                 </div>
 
             </div>

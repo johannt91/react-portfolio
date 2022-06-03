@@ -49,13 +49,13 @@ function Portfolio() {
             status: "Completed"
         },
         {
-            name: "Belles Artz",
-            description: "A website for the Belles Artz graphic design company featuring a list of their services",
+            name: "Bellesartz",
+            description: "A website for the Bellesartz graphic design company featuring a list of their services",
             technologies: "GatsbyJS",
             app: "https://johannt91.github.io/bellesite/",
             git: "https://github.com/johannt91/bellesite",
             projectTitle: "bellesartz",
-            status: "In Progress"
+            status: "In progress"
         }
     ])
 

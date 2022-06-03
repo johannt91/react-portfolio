@@ -20,7 +20,7 @@ return (
                 </h4>
                 <p>{description}</p>
                 <span>{technologies}</span>
-                <span className={`project-status ${projectStatus}`}>
+                <span className={projectStatus}>
                 Status: {status}
                 </span>
                 <div className="button-container">
