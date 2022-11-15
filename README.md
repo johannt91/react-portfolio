@@ -6,7 +6,7 @@
 
   This is a portfolio built with React showing some of my other projects.
 
-  Link to website: https://johannt91.github.io/react-portfolio/
+  Link to website: https://johanntaylor.com
 
   ## Table of Contents
 
